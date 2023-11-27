@@ -1,0 +1,261 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f8f8f8;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedor-logo {
+    text-align: center;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #333;
+    position: relative;
+    animation: aparecerArriba 1s ease-in-out;
+}
+
+@keyframes aparecerArriba {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.seccion-hero {
+    background-image: url('img/Imagem.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.contenido-hero {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.texto-animado {
+    animation: aparecerArriba 1s ease-in-out;
+}
+
+.fade-in {
+    animation: aparecer 1s ease-in-out;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes aparecerArriba {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.boton-cta {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.boton-cta:hover {
+    background-color: #555;
+}
+
+.seccion-destacados {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.contenido-destacados {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.destacado {
+    width: 30%;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.destacado img {
+    width: 60%;
+    height: auto;
+    transition: transform 0.3s ease-out;
+}
+
+.superposicion {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.destacado:hover img {
+    transform: scale(1.2);
+}
+
+.destacado:hover .superposicion {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.superposicion p {
+    color: black;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.boton-cta-pequeno {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.boton-cta-pequeno:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.social-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    margin: 0 15px;
+}
+
+.social-icons img {
+    width: 40px; 
+}
+
+
+.seccion-invitacion {
+    text-align: center;
+    padding: 80px 0;
+}
+
+.contenido-invitacion {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contenido-invitacion h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contenido-invitacion p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.boton-cta {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.boton-cta:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+
+.seccion-social {
+    text-align: center;
+}
+.iconos-sociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iconos-sociales a {
+    margin: 0 15px;
+    text-decoration: none;
+    display: inline-block;
+}
+.iconos-sociales img {
+    width: 40px;
+    height: auto;
+    transition: transform 0.3s ease-out;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}

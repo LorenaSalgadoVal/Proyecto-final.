@@ -1,0 +1,106 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f8f8f8;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a{
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+.logo a:hover{
+    color:aquamarine;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Sección de Servicios y Citas */
+
+.seccion-servicios, .seccion-citas {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.aparecer {
+    animation: aparecer 1s ease-in-out;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.contenido-servicios, .contenido-citas {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.producto, .opcion-cita {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.producto img, .opcion-cita img {
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.producto p, .opcion-cita p {
+    margin-top: 10px;
+}
+
+.boton-cta {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.boton-cta:hover {
+    background-color: #555;
+}
+
+/* Pie de Página */
+
+.pie-pagina {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+footer{
+    text-align: center;
+}
